@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 async function getHelpieResponse(prompt: string): Promise<string> {
-    const apiUrl = "http://localhost:3000"
+    const apiUrl = "https://helpie-server.onrender.com"
     
     try {
         const response = await axios.post(apiUrl, {prompt})

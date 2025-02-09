@@ -25,8 +25,8 @@ app.post('/', async (req, res) => {
     const response = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        { role: "system", content: "You are a professional software engineer. You are given a prompt and you need to generate a response." },
-        { role: "user", content: "write add to numbers function in js" }
+        { role: "system", content: "You are a professional software engineer. You are given a prompt and you need to generate a response. Just give the code only, no explanation or anything else. You don't need to put it in the ''' part too, this is because the code will be generated right to the editor." },
+        { role: "user", content: prompt }
       ],
       max_tokens: 500
     });
