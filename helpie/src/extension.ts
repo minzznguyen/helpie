@@ -4,7 +4,7 @@ import { getHelpieResponse } from './main';
 
 async function typeTextInEditor(editor: vscode.TextEditor, text: string) {
     for (let i = 0; i < text.length; i++) {
-        await new Promise(resolve => setTimeout(resolve, 50)); // Adjust the delay as needed
+        await new Promise(resolve => setTimeout(resolve, 5)); // Adjust the delay as needed
         editor.edit(editBuilder => {
             editBuilder.insert(editor.selection.active, text[i]);
         });
