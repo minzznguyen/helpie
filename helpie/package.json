@@ -2,6 +2,8 @@
   "name": "helpie",
   "displayName": "Helpie",
   "description": "Datasets of guidelines for ai agents",
+  "publisher": "helpie",
+  "icon": "helpie_logo.png",
   "version": "0.0.1",
   "repository": {
     "type": "git",
